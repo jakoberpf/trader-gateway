@@ -1,0 +1,29 @@
+{
+  "userGatewayApp": {
+    "accountServiceKeySet": {
+      "home": {
+        "title": "Key Sets",
+        "createLabel": "Create a new Key Set",
+        "createOrEditLabel": "Create or edit a Key Set",
+        "notFound": "No Key Sets found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Key Set {{ id }}?"
+      },
+      "detail": {
+        "title": "Key Set"
+      },
+      "market": "Market",
+      "apiKey": "Api Key",
+      "apiSecret": "Api Secret",
+      "keyCollection": "Key Collection"
+    }
+  },
+  "accountServiceApp": {
+    "accountServiceKeySet": {
+      "created": "A new Key Set is created with identifier {{ param }}",
+      "updated": "A Key Set is updated with identifier {{ param }}",
+      "deleted": "A Key Set is deleted with identifier {{ param }}"
+    }
+  }
+}

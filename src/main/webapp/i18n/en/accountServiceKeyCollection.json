@@ -1,0 +1,28 @@
+{
+  "userGatewayApp": {
+    "accountServiceKeyCollection": {
+      "home": {
+        "title": "Key Collections",
+        "createLabel": "Create a new Key Collection",
+        "createOrEditLabel": "Create or edit a Key Collection",
+        "notFound": "No Key Collections found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Key Collection {{ id }}?"
+      },
+      "detail": {
+        "title": "Key Collection"
+      },
+      "owner": "Owner",
+      "keySet": "Key Set",
+      "userAccount": "User Account"
+    }
+  },
+  "accountServiceApp": {
+    "accountServiceKeyCollection": {
+      "created": "A new Key Collection is created with identifier {{ param }}",
+      "updated": "A Key Collection is updated with identifier {{ param }}",
+      "deleted": "A Key Collection is deleted with identifier {{ param }}"
+    }
+  }
+}
