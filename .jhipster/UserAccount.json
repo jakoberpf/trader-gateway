@@ -2,8 +2,9 @@
   "name": "UserAccount",
   "fields": [
     {
-      "fieldName": "fieldName",
-      "fieldType": "String"
+      "fieldName": "owner",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
     }
   ],
   "relationships": [

@@ -23,7 +23,7 @@
             <thead>
                 <tr>
                     <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
-                    <th scope="col" ><span jhiTranslate="userGatewayApp.userGatewayUserAccount.fieldName">Field Name</span></th>
+                    <th scope="col" ><span jhiTranslate="userGatewayApp.userGatewayUserAccount.owner">Owner</span></th>
                     <th scope="col" ><span jhiTranslate="userGatewayApp.userGatewayUserAccount.keyCollection">Key Collection</span></th>
                     <th scope="col"></th>
                 </tr>
@@ -31,7 +31,7 @@
             <tbody>
                 <tr *ngFor="let userAccount of userAccounts ;trackBy: trackId">
                     <td><a [routerLink]="['/user-account', userAccount.id, 'view']">{{ userAccount.id }}</a></td>
-                    <td>{{ userAccount.fieldName }}</td>
+                    <td>{{ userAccount.owner }}</td>
                     <td>
                         <div *ngIf="userAccount.keyCollectionId">
                             <a [routerLink]="['/key-collection', userAccount.keyCollectionId , 'view']" >{{ userAccount.keyCollectionId }}</a>

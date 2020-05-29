@@ -1,9 +1,9 @@
 export interface IUserAccount {
   id?: string;
-  fieldName?: string;
+  owner?: string;
   keyCollectionId?: string;
 }
 
 export class UserAccount implements IUserAccount {
-  constructor(public id?: string, public fieldName?: string, public keyCollectionId?: string) {}
+  constructor(public id?: string, public owner?: string, public keyCollectionId?: string) {}
 }

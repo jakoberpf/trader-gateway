@@ -21,7 +21,7 @@ export class UserAccountUpdateComponent implements OnInit {
 
   editForm = this.fb.group({
     id: [],
-    fieldName: [],
+    owner: [null, [Validators.required]],
     keyCollectionId: [],
   });
 
@@ -63,7 +63,7 @@ export class UserAccountUpdateComponent implements OnInit {
   updateForm(userAccount: IUserAccount): void {
     this.editForm.patchValue({
       id: userAccount.id,
-      fieldName: userAccount.fieldName,
+      owner: userAccount.owner,
       keyCollectionId: userAccount.keyCollectionId,
     });
   }
@@ -86,7 +86,7 @@ export class UserAccountUpdateComponent implements OnInit {
     return {
       ...new UserAccount(),
       id: this.editForm.get(['id'])!.value,
-      fieldName: this.editForm.get(['fieldName'])!.value,
+      owner: this.editForm.get(['owner'])!.value,
       keyCollectionId: this.editForm.get(['keyCollectionId'])!.value,
     };
   }

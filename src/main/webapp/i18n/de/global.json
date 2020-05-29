@@ -9,7 +9,7 @@
         "main": "Entitäten",
         "userGatewayUserAccount": "User Account",
         "accountServiceKeyCollection": "Key Collection",
-        "accountServiceKeySet": "Key Set",
+        "userGatewayKeySet": "Key Set",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

@@ -1,0 +1,30 @@
+{
+  "userGatewayApp": {
+    "userGatewayKeySet": {
+      "home": {
+        "title": "Key Sets",
+        "createLabel": "Key Set erstellen",
+        "createOrEditLabel": "Key Set erstellen oder bearbeiten",
+        "notFound": "No Key Sets found"
+      },
+      "delete": {
+        "question": "Soll Key Set {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Key Set"
+      },
+      "owner": "Owner",
+      "market": "Market",
+      "apiKey": "Api Key",
+      "apiSecret": "Api Secret",
+      "keyCollection": "Key Collection"
+    }
+  },
+  "userGatewayApp": {
+    "userGatewayKeySet": {
+      "created": "Key Set erstellt mit ID {{ param }}",
+      "updated": "Key Set aktualisiert mit ID {{ param }}",
+      "deleted": "Key Set gelöscht mit ID {{ param }}"
+    }
+  }
+}

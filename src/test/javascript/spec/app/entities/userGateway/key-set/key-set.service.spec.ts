@@ -1,15 +1,16 @@
 import { TestBed, getTestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
-import { UserAccountService } from 'app/entities/userGateway/user-account/user-account.service';
-import { IUserAccount, UserAccount } from 'app/shared/model/userGateway/user-account.model';
+import { KeySetService } from 'app/entities/userGateway/key-set/key-set.service';
+import { IKeySet, KeySet } from 'app/shared/model/userGateway/key-set.model';
+import { MARKET } from 'app/shared/model/enumerations/market.model';
 
 describe('Service Tests', () => {
-  describe('UserAccount Service', () => {
+  describe('KeySet Service', () => {
     let injector: TestBed;
-    let service: UserAccountService;
+    let service: KeySetService;
     let httpMock: HttpTestingController;
-    let elemDefault: IUserAccount;
-    let expectedResult: IUserAccount | IUserAccount[] | boolean | null;
+    let elemDefault: IKeySet;
+    let expectedResult: IKeySet | IKeySet[] | boolean | null;
 
     beforeEach(() => {
       TestBed.configureTestingModule({
@@ -17,10 +18,10 @@ describe('Service Tests', () => {
       });
       expectedResult = null;
       injector = getTestBed();
-      service = injector.get(UserAccountService);
+      service = injector.get(KeySetService);
       httpMock = injector.get(HttpTestingController);
 
-      elemDefault = new UserAccount('ID', 'AAAAAAA');
+      elemDefault = new KeySet('ID', 'AAAAAAA', MARKET.SAMPLE_ENUM, 'AAAAAAA', 'AAAAAAA');
     });
 
     describe('Service methods', () => {
@@ -34,7 +35,7 @@ describe('Service Tests', () => {
         expect(expectedResult).toMatchObject(elemDefault);
       });
 
-      it('should create a UserAccount', () => {
+      it('should create a KeySet', () => {
         const returnedFromService = Object.assign(
           {
             id: 'ID',
@@ -44,17 +45,20 @@ describe('Service Tests', () => {
 
         const expected = Object.assign({}, returnedFromService);
 
-        service.create(new UserAccount()).subscribe(resp => (expectedResult = resp.body));
+        service.create(new KeySet()).subscribe(resp => (expectedResult = resp.body));
 
         const req = httpMock.expectOne({ method: 'POST' });
         req.flush(returnedFromService);
         expect(expectedResult).toMatchObject(expected);
       });
 
-      it('should update a UserAccount', () => {
+      it('should update a KeySet', () => {
         const returnedFromService = Object.assign(
           {
             owner: 'BBBBBB',
+            market: 'BBBBBB',
+            apiKey: 'BBBBBB',
+            apiSecret: 'BBBBBB',
           },
           elemDefault
         );
@@ -68,10 +72,13 @@ describe('Service Tests', () => {
         expect(expectedResult).toMatchObject(expected);
       });
 
-      it('should return a list of UserAccount', () => {
+      it('should return a list of KeySet', () => {
         const returnedFromService = Object.assign(
           {
             owner: 'BBBBBB',
+            market: 'BBBBBB',
+            apiKey: 'BBBBBB',
+            apiSecret: 'BBBBBB',
           },
           elemDefault
         );
@@ -86,7 +93,7 @@ describe('Service Tests', () => {
         expect(expectedResult).toContainEqual(expected);
       });
 
-      it('should delete a UserAccount', () => {
+      it('should delete a KeySet', () => {
         service.delete('123').subscribe(resp => (expectedResult = resp.ok));
 
         const req = httpMock.expectOne({ method: 'DELETE' });

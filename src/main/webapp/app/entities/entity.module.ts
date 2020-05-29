@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
       },
       {
         path: 'key-set',
-        loadChildren: () => import('./accountService/key-set/key-set.module').then(m => m.AccountServiceKeySetModule),
+        loadChildren: () => import('./userGateway/key-set/key-set.module').then(m => m.UserGatewayKeySetModule),
       },
       /* jhipster-needle-add-entity-route - JHipster will add entity modules routes here */
     ]),

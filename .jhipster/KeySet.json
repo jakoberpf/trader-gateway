@@ -2,8 +2,13 @@
   "name": "KeySet",
   "fields": [
     {
+      "fieldName": "owner",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
       "fieldName": "market",
-      "fieldType": "MarketE",
+      "fieldType": "MARKET",
       "fieldValues": "SAMPLE_ENUM",
       "fieldValidateRules": ["required"]
     },
@@ -39,5 +44,5 @@
   "embedded": false,
   "clientRootFolder": "",
   "applications": ["userGateway"],
-  "microserviceName": "accountService"
+  "microserviceName": "userGateway"
 }

@@ -43,9 +43,9 @@ describe('UserAccount e2e test', () => {
 
     await userAccountComponentsPage.clickOnCreateButton();
 
-    await promise.all([userAccountUpdatePage.setFieldNameInput('fieldName'), userAccountUpdatePage.keyCollectionSelectLastOption()]);
+    await promise.all([userAccountUpdatePage.setOwnerInput('owner'), userAccountUpdatePage.keyCollectionSelectLastOption()]);
 
-    expect(await userAccountUpdatePage.getFieldNameInput()).to.eq('fieldName', 'Expected FieldName value to be equals to fieldName');
+    expect(await userAccountUpdatePage.getOwnerInput()).to.eq('owner', 'Expected Owner value to be equals to owner');
 
     await userAccountUpdatePage.save();
     expect(await userAccountUpdatePage.getSaveButton().isPresent(), 'Expected save button disappear').to.be.false;

@@ -1,4 +1,4 @@
-import { IKeySet } from 'app/shared/model/accountService/key-set.model';
+import { IKeySet } from 'app/shared/model/userGateway/key-set.model';
 
 export interface IKeyCollection {
   id?: string;
