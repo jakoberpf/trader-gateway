@@ -6,7 +6,7 @@
     "serverPort": "8080",
     "serviceDiscoveryType": "eureka",
     "skipUserManagement": true,
-    "baseName": "userGateway",
+    "baseName": "TraderGateway",
     "buildTool": "maven",
     "databaseType": "mongodb",
     "devDatabaseType": "mongodb",
@@ -23,8 +23,8 @@
     "testFrameworks": ["protractor"],
     "websocket": false,
     "applicationType": "gateway",
-    "packageName": "de.ginisolutions.trader.gateway.user",
-    "packageFolder": "de/ginisolutions/trader/gateway/user",
+    "packageName": "de.ginisolutions.trader.gateway",
+    "packageFolder": "de/ginisolutions/trader/gateway",
     "jhipsterVersion": "6.9.0",
     "creationTimestamp": 1590516960016,
     "skipServer": false,
@@ -38,5 +38,5 @@
     "otherModules": [],
     "blueprints": []
   },
-  "entities": ["UserAccount", "KeyCollection", "KeySet"]
+  "entities": []
 }

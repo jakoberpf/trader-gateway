@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.ginisolutions.trader.gateway.user</groupId>
-    <artifactId>user-gateway</artifactId>
+    <groupId>de.ginisolutions.trader.gateway</groupId>
+    <artifactId>trader-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>User Gateway</name>
+    <name>Trader Gateway</name>
 
     <repositories>
         <!-- jhipster-needle-maven-repository -->
@@ -310,11 +310,6 @@
             <artifactId>metrics-core</artifactId>
         </dependency>
         <!-- jhipster-needle-maven-add-dependency -->
-        <!--        <dependency>-->
-        <!--            <groupId>de.ginisolutions.trader.domain</groupId>-->
-        <!--            <artifactId>trader-domain</artifactId>-->
-        <!--            <version>0.0.1-SNAPSHOT</version>-->
-        <!--        </dependency>-->
     </dependencies>
 
     <build>
@@ -581,7 +576,7 @@
                             <image>adoptopenjdk:11-jre-hotspot</image>
                         </from>
                         <to>
-                            <image>usergateway:latest</image>
+                            <image>tradergateway:latest</image>
                         </to>
                         <container>
                             <entrypoint>
@@ -765,14 +760,14 @@
                             <configuration>
                                 <inputSpec>${project.basedir}/src/main/resources/swagger/api.yml</inputSpec>
                                 <generatorName>spring</generatorName>
-                                <apiPackage>de.ginisolutions.trader.gateway.user.web.api</apiPackage>
-                                <modelPackage>de.ginisolutions.trader.gateway.user.web.api.model</modelPackage>
+                                <apiPackage>de.ginisolutions.trader.gateway.web.api</apiPackage>
+                                <modelPackage>de.ginisolutions.trader.gateway.web.api.model</modelPackage>
                                 <supportingFilesToGenerate>ApiUtil.java</supportingFilesToGenerate>
                                 <importMappings>Problem=org.zalando.problem.Problem</importMappings>
                                 <skipValidateSpec>false</skipValidateSpec>
                                 <configOptions>
                                     <delegatePattern>true</delegatePattern>
-                                    <title>user-gateway</title>
+                                    <title>trader-gateway</title>
                                 </configOptions>
                             </configuration>
                         </execution>

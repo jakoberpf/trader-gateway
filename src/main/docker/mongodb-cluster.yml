@@ -1,16 +1,16 @@
 version: '2'
 services:
-  usergateway-mongodb:
+  tradergateway-mongodb:
     image: mongo:4.2.6
     ports:
       - '27017:27017'
-    command: mongos --configdb csvr/usergateway-mongodb-config --bind_ip 0.0.0.0
-  usergateway-mongodb-node:
+    command: mongos --configdb csvr/tradergateway-mongodb-config --bind_ip 0.0.0.0
+  tradergateway-mongodb-node:
     build:
       context: .
       dockerfile: mongodb/MongoDB.Dockerfile
     command: mongod --shardsvr --replSet rs1
-  usergateway-mongodb-config:
+  tradergateway-mongodb-config:
     image: mongo:4.2.6
-    container_name: usergateway-mongodb-config
+    container_name: tradergateway-mongodb-config
     command: mongod --configsvr --dbpath /data/db --replSet csvr

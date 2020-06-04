@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 
-import { UserGatewayTestModule } from '../../test.module';
+import { TraderGatewayTestModule } from '../../test.module';
 import { HomeComponent } from 'app/home/home.component';
 import { AccountService } from 'app/core/auth/account.service';
 
@@ -12,7 +12,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [UserGatewayTestModule],
+        imports: [TraderGatewayTestModule],
         declarations: [HomeComponent],
       })
         .overrideTemplate(HomeComponent, '')

@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import './vendor';
-import { UserGatewaySharedModule } from 'app/shared/shared.module';
-import { UserGatewayCoreModule } from 'app/core/core.module';
-import { UserGatewayAppRoutingModule } from './app-routing.module';
-import { UserGatewayHomeModule } from './home/home.module';
-import { UserGatewayEntityModule } from './entities/entity.module';
+import { TraderGatewaySharedModule } from 'app/shared/shared.module';
+import { TraderGatewayCoreModule } from 'app/core/core.module';
+import { TraderGatewayAppRoutingModule } from './app-routing.module';
+import { TraderGatewayHomeModule } from './home/home.module';
+import { TraderGatewayEntityModule } from './entities/entity.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { MainComponent } from './layouts/main/main.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
@@ -18,14 +18,14 @@ import { ErrorComponent } from './layouts/error/error.component';
 @NgModule({
   imports: [
     BrowserModule,
-    UserGatewaySharedModule,
-    UserGatewayCoreModule,
-    UserGatewayHomeModule,
+    TraderGatewaySharedModule,
+    TraderGatewayCoreModule,
+    TraderGatewayHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
-    UserGatewayEntityModule,
-    UserGatewayAppRoutingModule,
+    TraderGatewayEntityModule,
+    TraderGatewayAppRoutingModule,
   ],
   declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
   bootstrap: [MainComponent],
 })
-export class UserGatewayAppModule {}
+export class TraderGatewayAppModule {}

@@ -28,4 +28,4 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
   ],
   exports: [RouterModule],
 })
-export class UserGatewayAppRoutingModule {}
+export class TraderGatewayAppRoutingModule {}

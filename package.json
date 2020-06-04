@@ -1,7 +1,7 @@
 {
-  "name": "user-gateway",
+  "name": "trader-gateway",
   "version": "0.0.1-SNAPSHOT",
-  "description": "Description for userGateway",
+  "description": "Description for TraderGateway",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

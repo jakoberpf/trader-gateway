@@ -17,7 +17,7 @@ logging:
   level:
     ROOT: DEBUG
     io.github.jhipster: DEBUG
-    de.ginisolutions.trader.gateway.user: DEBUG
+    de.ginisolutions.trader.gateway: DEBUG
 
 eureka:
   instance:
@@ -45,7 +45,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017
-      database: userGateway
+      database: TraderGateway
   mail:
     host: localhost
     port: 25

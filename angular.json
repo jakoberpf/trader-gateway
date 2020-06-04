@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "user-gateway": {
+    "trader-gateway": {
       "root": "",
       "sourceRoot": "src/main/webapp",
       "projectType": "application",
@@ -29,7 +29,7 @@
       "architect": {}
     }
   },
-  "defaultProject": "user-gateway",
+  "defaultProject": "trader-gateway",
   "cli": {
     "packageManager": "npm"
   }

@@ -24,8 +24,8 @@ eureka:
     instance-info-replication-interval-seconds: 10
     registry-fetch-interval-seconds: 10
   instance:
-    appname: usergateway
-    instanceId: usergateway:${spring.application.instance-id:${random.value}}
+    appname: tradergateway
+    instanceId: tradergateway:${spring.application.instance-id:${random.value}}
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 10
     status-page-url-path: ${management.endpoints.web.base-path}/info
@@ -104,7 +104,7 @@ management:
 
 spring:
   application:
-    name: userGateway
+    name: TraderGateway
   jmx:
     enabled: false
   messages:
@@ -116,13 +116,13 @@ spring:
       enabled: false
   task:
     execution:
-      thread-name-prefix: user-gateway-task-
+      thread-name-prefix: trader-gateway-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: user-gateway-scheduling-
+      thread-name-prefix: trader-gateway-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -160,7 +160,7 @@ info:
 
 jhipster:
   clientApp:
-    name: 'userGatewayApp'
+    name: 'traderGatewayApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #     allowed-origins: "*"
@@ -170,11 +170,11 @@ jhipster:
   #     allow-credentials: true
   #     max-age: 1800
   mail:
-    from: userGateway@localhost
+    from: TraderGateway@localhost
   swagger:
     default-include-pattern: /api/.*
-    title: userGateway API
-    description: userGateway API documentation
+    title: TraderGateway API
+    description: TraderGateway API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:
