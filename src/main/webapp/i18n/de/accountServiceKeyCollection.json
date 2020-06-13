@@ -1,0 +1,28 @@
+{
+  "traderGatewayApp": {
+    "accountServiceKeyCollection": {
+      "home": {
+        "title": "Key Collections",
+        "createLabel": "Key Collection erstellen",
+        "createOrEditLabel": "Key Collection erstellen oder bearbeiten",
+        "notFound": "No Key Collections found"
+      },
+      "delete": {
+        "question": "Soll Key Collection {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Key Collection"
+      },
+      "owner": "Owner",
+      "keySet": "Key Set",
+      "userAccount": "User Account"
+    }
+  },
+  "accountServiceApp": {
+    "accountServiceKeyCollection": {
+      "created": "Key Collection erstellt mit ID {{ param }}",
+      "updated": "Key Collection aktualisiert mit ID {{ param }}",
+      "deleted": "Key Collection gelöscht mit ID {{ param }}"
+    }
+  }
+}

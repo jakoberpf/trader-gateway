@@ -1,0 +1,27 @@
+{
+  "traderGatewayApp": {
+    "userGatewayUserAccount": {
+      "home": {
+        "title": "User Accounts",
+        "createLabel": "Create a new User Account",
+        "createOrEditLabel": "Create or edit a User Account",
+        "notFound": "No User Accounts found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete User Account {{ id }}?"
+      },
+      "detail": {
+        "title": "User Account"
+      },
+      "owner": "Owner",
+      "keyCollection": "Key Collection"
+    }
+  },
+  "userGatewayApp": {
+    "userGatewayUserAccount": {
+      "created": "A new User Account is created with identifier {{ param }}",
+      "updated": "A User Account is updated with identifier {{ param }}",
+      "deleted": "A User Account is deleted with identifier {{ param }}"
+    }
+  }
+}
